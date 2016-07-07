@@ -1,0 +1,45 @@
+//
+//  PrefixHeader.pch
+//  MZWKWebView
+//
+//  Created by Mr.Yang on 16/7/7.
+//  Copyright © 2016年 MZ. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "MyTool.h"
+
+#define networryBack [UIColor colorWithRed:255/255.0 green:239/255.0 blue:184/255.0 alpha:1]//无网络背景
+#define NAVCOLOR [UIColor whiteColor]//导航栏颜色
+
+#define DEVICE_BOUNDS [UIScreen mainScreen].bounds//屏幕的大小
+#define DEVICE_WIDTH [UIScreen mainScreen].bounds.size.width //屏幕的宽
+#define DEVICE_HEIGHT [UIScreen mainScreen].bounds.size.height //屏幕的高
+#define DEVICE_NAVHEIGH self.navigationController.navigationBar.frame.size.height //导航栏的高
+#define DEVICE_NAVSTATUEHEIGH (self.navigationController.navigationBar.frame.size.height + [[UIApplication sharedApplication] statusBarFrame].size.height)
+#define DEVICE_STATUE_HEIGH [[UIApplication sharedApplication] statusBarFrame].size.height
+
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#define WS(weakSelf,Views)  __weak typeof(Views) weakSelf = Views
+
+#define token @"token"//token
+#define userTypeIsTeacher @"userTypeIsTeacher"//用户类型
+
+// 判断是否iPhone4
+#define iPhone4 ([UIScreen mainScreen].bounds.size.height == 480)
+// 判断是否iPhone5
+#define iPhone5 ([UIScreen mainScreen].bounds.size.height == 568)
+
+// 判断是否iPhone6
+#define iPhone6 ([UIScreen mainScreen].bounds.size.height == 667)
+
+// 判断是否iPhone6plus
+#define iPhone6plus ([UIScreen mainScreen].bounds.size.height == 736)
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
