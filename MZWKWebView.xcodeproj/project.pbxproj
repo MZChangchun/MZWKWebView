@@ -15,9 +15,11 @@
 		396839721D2DE38A002910B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396839701D2DE38A002910B2 /* LaunchScreen.storyboard */; };
 		3968397D1D2DE38A002910B2 /* MZWKWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3968397C1D2DE38A002910B2 /* MZWKWebViewTests.m */; };
 		396839881D2DE38A002910B2 /* MZWKWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 396839871D2DE38A002910B2 /* MZWKWebViewUITests.m */; };
+		396FFFD41D3F17F900364378 /* MZWebViewControllerTotal.m in Sources */ = {isa = PBXBuildFile; fileRef = 396FFFD31D3F17F900364378 /* MZWebViewControllerTotal.m */; };
 		39DB10981D2DF54800E44198 /* MZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB10971D2DF54800E44198 /* MZWebViewController.m */; };
 		39DB10A31D2DF6AC00E44198 /* MyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB10A21D2DF6AC00E44198 /* MyTool.m */; };
 		39DB10A81D2DF73300E44198 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB10A71D2DF73300E44198 /* WelcomeViewController.m */; };
+		39DB10AC1D2E53EC00E44198 /* MZAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB10AB1D2E53EC00E44198 /* MZAlertViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		396839831D2DE38A002910B2 /* MZWKWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZWKWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		396839871D2DE38A002910B2 /* MZWKWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZWKWebViewUITests.m; sourceTree = "<group>"; };
 		396839891D2DE38A002910B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		396FFFD21D3F17F900364378 /* MZWebViewControllerTotal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZWebViewControllerTotal.h; sourceTree = "<group>"; };
+		396FFFD31D3F17F900364378 /* MZWebViewControllerTotal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZWebViewControllerTotal.m; sourceTree = "<group>"; };
 		39DB10961D2DF54800E44198 /* MZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZWebViewController.h; sourceTree = "<group>"; };
 		39DB10971D2DF54800E44198 /* MZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZWebViewController.m; sourceTree = "<group>"; };
 		39DB10A11D2DF6AC00E44198 /* MyTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTool.h; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 		39DB10A41D2DF6D000E44198 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		39DB10A61D2DF73300E44198 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		39DB10A71D2DF73300E44198 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		39DB10AA1D2E53EC00E44198 /* MZAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZAlertViewController.h; sourceTree = "<group>"; };
+		39DB10AB1D2E53EC00E44198 /* MZAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZAlertViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 				396839661D2DE389002910B2 /* AppDelegate.m */,
 				396839681D2DE389002910B2 /* ViewController.h */,
 				396839691D2DE389002910B2 /* ViewController.m */,
+				39DB10A91D2E53A700E44198 /* 自定义alert */,
 				39DB10A51D2DF73300E44198 /* WelcomeViewController */,
 				39DB10921D2DF1DB00E44198 /* MZBaseWkWebView */,
 				3968396B1D2DE389002910B2 /* Main.storyboard */,
@@ -160,6 +167,8 @@
 			children = (
 				39DB10961D2DF54800E44198 /* MZWebViewController.h */,
 				39DB10971D2DF54800E44198 /* MZWebViewController.m */,
+				396FFFD21D3F17F900364378 /* MZWebViewControllerTotal.h */,
+				396FFFD31D3F17F900364378 /* MZWebViewControllerTotal.m */,
 			);
 			path = MZBaseWkWebView;
 			sourceTree = "<group>";
@@ -171,6 +180,15 @@
 				39DB10A71D2DF73300E44198 /* WelcomeViewController.m */,
 			);
 			path = WelcomeViewController;
+			sourceTree = "<group>";
+		};
+		39DB10A91D2E53A700E44198 /* 自定义alert */ = {
+			isa = PBXGroup;
+			children = (
+				39DB10AA1D2E53EC00E44198 /* MZAlertViewController.h */,
+				39DB10AB1D2E53EC00E44198 /* MZAlertViewController.m */,
+			);
+			path = "自定义alert";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,8 +323,10 @@
 			files = (
 				39DB10981D2DF54800E44198 /* MZWebViewController.m in Sources */,
 				39DB10A31D2DF6AC00E44198 /* MyTool.m in Sources */,
+				39DB10AC1D2E53EC00E44198 /* MZAlertViewController.m in Sources */,
 				3968396A1D2DE389002910B2 /* ViewController.m in Sources */,
 				396839671D2DE389002910B2 /* AppDelegate.m in Sources */,
+				396FFFD41D3F17F900364378 /* MZWebViewControllerTotal.m in Sources */,
 				396839641D2DE389002910B2 /* main.m in Sources */,
 				39DB10A81D2DF73300E44198 /* WelcomeViewController.m in Sources */,
 			);
