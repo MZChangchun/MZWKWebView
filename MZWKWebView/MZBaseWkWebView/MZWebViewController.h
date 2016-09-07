@@ -8,16 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
-#import <SystemConfiguration/SystemConfiguration.h>
 #import <MBProgressHUD.h>
-#import <MessageUI/MessageUI.h>//信息电话
+
 
 @interface MZWebViewController : UIViewController<UIActionSheetDelegate ,NSURLConnectionDelegate,WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler,UIScrollViewDelegate>
 
 @property (nonatomic, strong)WKWebView * WKView;
 @property (nonatomic, strong)WKWebViewConfiguration *configuretion;
 
-@property (nonatomic, copy)NSString * urlName;//按照名字加载URL
 @property (nonatomic, copy)NSString * url;//加载URL
 
 @property (nonatomic, weak)MBProgressHUD *hud;

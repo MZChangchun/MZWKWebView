@@ -7,16 +7,22 @@
 //
 
 #import "ViewController.h"
+#import "YYWeb.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+- (void)viewDidAppear:(BOOL)animated {
+    YYWeb * web = [[YYWeb alloc] init];
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:web] animated:1 completion:nil];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+   
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,22 +1,22 @@
 //
-//  MZAlertViewController.m
+//  YYWeb.m
 //  MZWKWebView
 //
-//  Created by Mr.Yang on 16/7/7.
+//  Created by Mr.Yang on 16/9/7.
 //  Copyright © 2016年 MZ. All rights reserved.
 //
 
-#import "MZAlertViewController.h"
+#import "YYWeb.h"
 
-@interface MZAlertViewController ()
+@interface YYWeb ()
 
 @end
 
-@implementation MZAlertViewController
+@implementation YYWeb
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.url = @"https://www.baidu.com";
 }
 
 - (void)didReceiveMemoryWarning {

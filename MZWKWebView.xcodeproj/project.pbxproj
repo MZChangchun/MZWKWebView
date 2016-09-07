@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3917B5EC1D7FB7D1002986E9 /* YYWeb.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917B5EB1D7FB7D1002986E9 /* YYWeb.m */; };
 		396839641D2DE389002910B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 396839631D2DE389002910B2 /* main.m */; };
 		396839671D2DE389002910B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 396839661D2DE389002910B2 /* AppDelegate.m */; };
 		3968396A1D2DE389002910B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 396839691D2DE389002910B2 /* ViewController.m */; };
@@ -15,11 +16,8 @@
 		396839721D2DE38A002910B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396839701D2DE38A002910B2 /* LaunchScreen.storyboard */; };
 		3968397D1D2DE38A002910B2 /* MZWKWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3968397C1D2DE38A002910B2 /* MZWKWebViewTests.m */; };
 		396839881D2DE38A002910B2 /* MZWKWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 396839871D2DE38A002910B2 /* MZWKWebViewUITests.m */; };
-		396FFFD41D3F17F900364378 /* MZWebViewControllerTotal.m in Sources */ = {isa = PBXBuildFile; fileRef = 396FFFD31D3F17F900364378 /* MZWebViewControllerTotal.m */; };
 		39DB10981D2DF54800E44198 /* MZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB10971D2DF54800E44198 /* MZWebViewController.m */; };
-		39DB10A31D2DF6AC00E44198 /* MyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB10A21D2DF6AC00E44198 /* MyTool.m */; };
-		39DB10A81D2DF73300E44198 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB10A71D2DF73300E44198 /* WelcomeViewController.m */; };
-		39DB10AC1D2E53EC00E44198 /* MZAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB10AB1D2E53EC00E44198 /* MZAlertViewController.m */; };
+		4045F6C9256537B12368D437 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 383B58C44A4A5EACB045948F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3968395F1D2DE389002910B2 /* MZWKWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZWKWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		149B9882642E4B204783246D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		383B58C44A4A5EACB045948F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3917B5E71D7FB5D5002986E9 /* MZWKWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZWKWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3917B5E81D7FB5D5002986E9 /* MZWKWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZWKWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3917B5E91D7FB5D5002986E9 /* MZWKWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZWKWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3917B5EA1D7FB7D1002986E9 /* YYWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeb.h; sourceTree = "<group>"; };
+		3917B5EB1D7FB7D1002986E9 /* YYWeb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeb.m; sourceTree = "<group>"; };
 		396839631D2DE389002910B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		396839651D2DE389002910B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		396839661D2DE389002910B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,23 +54,13 @@
 		3968396E1D2DE389002910B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		396839711D2DE38A002910B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		396839731D2DE38A002910B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		396839781D2DE38A002910B2 /* MZWKWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZWKWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3968397C1D2DE38A002910B2 /* MZWKWebViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZWKWebViewTests.m; sourceTree = "<group>"; };
 		3968397E1D2DE38A002910B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		396839831D2DE38A002910B2 /* MZWKWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZWKWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		396839871D2DE38A002910B2 /* MZWKWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZWKWebViewUITests.m; sourceTree = "<group>"; };
 		396839891D2DE38A002910B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		396FFFD21D3F17F900364378 /* MZWebViewControllerTotal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZWebViewControllerTotal.h; sourceTree = "<group>"; };
-		396FFFD31D3F17F900364378 /* MZWebViewControllerTotal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZWebViewControllerTotal.m; sourceTree = "<group>"; };
 		39DB10961D2DF54800E44198 /* MZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZWebViewController.h; sourceTree = "<group>"; };
 		39DB10971D2DF54800E44198 /* MZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZWebViewController.m; sourceTree = "<group>"; };
-		39DB10A11D2DF6AC00E44198 /* MyTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTool.h; sourceTree = "<group>"; };
-		39DB10A21D2DF6AC00E44198 /* MyTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTool.m; sourceTree = "<group>"; };
-		39DB10A41D2DF6D000E44198 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		39DB10A61D2DF73300E44198 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
-		39DB10A71D2DF73300E44198 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
-		39DB10AA1D2E53EC00E44198 /* MZAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZAlertViewController.h; sourceTree = "<group>"; };
-		39DB10AB1D2E53EC00E44198 /* MZAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZAlertViewController.m; sourceTree = "<group>"; };
+		46428DDE54A7D5C056E60BB3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4045F6C9256537B12368D437 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,31 +95,23 @@
 				396839611D2DE389002910B2 /* MZWKWebView */,
 				3968397B1D2DE38A002910B2 /* MZWKWebViewTests */,
 				396839861D2DE38A002910B2 /* MZWKWebViewUITests */,
-				396839601D2DE389002910B2 /* Products */,
+				C64CA060C1FB2B3770660143 /* Pods */,
+				8C7B1700F92446B69A0F908C /* Frameworks */,
+				3917B5E71D7FB5D5002986E9 /* MZWKWebView.app */,
+				3917B5E81D7FB5D5002986E9 /* MZWKWebViewTests.xctest */,
+				3917B5E91D7FB5D5002986E9 /* MZWKWebViewUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		396839601D2DE389002910B2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3968395F1D2DE389002910B2 /* MZWKWebView.app */,
-				396839781D2DE38A002910B2 /* MZWKWebViewTests.xctest */,
-				396839831D2DE38A002910B2 /* MZWKWebViewUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		396839611D2DE389002910B2 /* MZWKWebView */ = {
 			isa = PBXGroup;
 			children = (
-				39DB10A11D2DF6AC00E44198 /* MyTool.h */,
-				39DB10A21D2DF6AC00E44198 /* MyTool.m */,
 				396839651D2DE389002910B2 /* AppDelegate.h */,
 				396839661D2DE389002910B2 /* AppDelegate.m */,
 				396839681D2DE389002910B2 /* ViewController.h */,
 				396839691D2DE389002910B2 /* ViewController.m */,
-				39DB10A91D2E53A700E44198 /* 自定义alert */,
-				39DB10A51D2DF73300E44198 /* WelcomeViewController */,
+				3917B5EA1D7FB7D1002986E9 /* YYWeb.h */,
+				3917B5EB1D7FB7D1002986E9 /* YYWeb.m */,
 				39DB10921D2DF1DB00E44198 /* MZBaseWkWebView */,
 				3968396B1D2DE389002910B2 /* Main.storyboard */,
 				3968396E1D2DE389002910B2 /* Assets.xcassets */,
@@ -148,7 +135,6 @@
 			children = (
 				3968397C1D2DE38A002910B2 /* MZWKWebViewTests.m */,
 				3968397E1D2DE38A002910B2 /* Info.plist */,
-				39DB10A41D2DF6D000E44198 /* PrefixHeader.pch */,
 			);
 			path = MZWKWebViewTests;
 			sourceTree = "<group>";
@@ -167,28 +153,25 @@
 			children = (
 				39DB10961D2DF54800E44198 /* MZWebViewController.h */,
 				39DB10971D2DF54800E44198 /* MZWebViewController.m */,
-				396FFFD21D3F17F900364378 /* MZWebViewControllerTotal.h */,
-				396FFFD31D3F17F900364378 /* MZWebViewControllerTotal.m */,
 			);
 			path = MZBaseWkWebView;
 			sourceTree = "<group>";
 		};
-		39DB10A51D2DF73300E44198 /* WelcomeViewController */ = {
+		8C7B1700F92446B69A0F908C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				39DB10A61D2DF73300E44198 /* WelcomeViewController.h */,
-				39DB10A71D2DF73300E44198 /* WelcomeViewController.m */,
+				383B58C44A4A5EACB045948F /* libPods.a */,
 			);
-			path = WelcomeViewController;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		39DB10A91D2E53A700E44198 /* 自定义alert */ = {
+		C64CA060C1FB2B3770660143 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				39DB10AA1D2E53EC00E44198 /* MZAlertViewController.h */,
-				39DB10AB1D2E53EC00E44198 /* MZAlertViewController.m */,
+				46428DDE54A7D5C056E60BB3 /* Pods.debug.xcconfig */,
+				149B9882642E4B204783246D /* Pods.release.xcconfig */,
 			);
-			path = "自定义alert";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3968398C1D2DE38A002910B2 /* Build configuration list for PBXNativeTarget "MZWKWebView" */;
 			buildPhases = (
+				A7CDFE8942118C506E5AA12F /* Check Pods Manifest.lock */,
 				3968395B1D2DE389002910B2 /* Sources */,
 				3968395C1D2DE389002910B2 /* Frameworks */,
 				3968395D1D2DE389002910B2 /* Resources */,
+				7F71205C65649534A4180986 /* Embed Pods Frameworks */,
+				20090AE2BAEBC38E4C330B15 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,7 +194,7 @@
 			);
 			name = MZWKWebView;
 			productName = MZWKWebView;
-			productReference = 3968395F1D2DE389002910B2 /* MZWKWebView.app */;
+			productReference = 3917B5E71D7FB5D5002986E9 /* MZWKWebView.app */;
 			productType = "com.apple.product-type.application";
 		};
 		396839771D2DE38A002910B2 /* MZWKWebViewTests */ = {
@@ -226,7 +212,7 @@
 			);
 			name = MZWKWebViewTests;
 			productName = MZWKWebViewTests;
-			productReference = 396839781D2DE38A002910B2 /* MZWKWebViewTests.xctest */;
+			productReference = 3917B5E81D7FB5D5002986E9 /* MZWKWebViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		396839821D2DE38A002910B2 /* MZWKWebViewUITests */ = {
@@ -244,7 +230,7 @@
 			);
 			name = MZWKWebViewUITests;
 			productName = MZWKWebViewUITests;
-			productReference = 396839831D2DE38A002910B2 /* MZWKWebViewUITests.xctest */;
+			productReference = 3917B5E91D7FB5D5002986E9 /* MZWKWebViewUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -278,7 +264,7 @@
 				Base,
 			);
 			mainGroup = 396839561D2DE389002910B2;
-			productRefGroup = 396839601D2DE389002910B2 /* Products */;
+			productRefGroup = 396839561D2DE389002910B2;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -316,19 +302,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20090AE2BAEBC38E4C330B15 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F71205C65649534A4180986 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7CDFE8942118C506E5AA12F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3968395B1D2DE389002910B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				39DB10981D2DF54800E44198 /* MZWebViewController.m in Sources */,
-				39DB10A31D2DF6AC00E44198 /* MyTool.m in Sources */,
-				39DB10AC1D2E53EC00E44198 /* MZAlertViewController.m in Sources */,
 				3968396A1D2DE389002910B2 /* ViewController.m in Sources */,
 				396839671D2DE389002910B2 /* AppDelegate.m in Sources */,
-				396FFFD41D3F17F900364378 /* MZWebViewControllerTotal.m in Sources */,
+				3917B5EC1D7FB7D1002986E9 /* YYWeb.m in Sources */,
 				396839641D2DE389002910B2 /* main.m in Sources */,
-				39DB10A81D2DF73300E44198 /* WelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -458,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -467,10 +498,11 @@
 		};
 		3968398D1D2DE38A002910B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46428DDE54A7D5C056E60BB3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = MZWKWebView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dysoft.MZWKWebView;
@@ -480,10 +512,11 @@
 		};
 		3968398E1D2DE38A002910B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 149B9882642E4B204783246D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = MZWKWebView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dysoft.MZWKWebView;
