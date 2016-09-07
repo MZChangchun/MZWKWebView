@@ -11,7 +11,8 @@
 
 
 #import "AppDelegate.h"
-#import "LoginViewController.h"
+#import "MyTool.h"
+
 
 //#import "UIScrollView+UITouch.h"
 
@@ -25,6 +26,9 @@
 
 //加载网页
 - (void)setUrlName:(NSString *)urlName{
+    if (self.WKView.loading) {
+        [self.WKView stopLoading];
+    }
     _urlName = urlName;
     NSURLRequest * request = [MyTool loadUrlName:urlName];
     
@@ -32,6 +36,9 @@
 }
 
 - (void)setUrl:(NSString *)url{
+    if (self.WKView.loading) {
+        [self.WKView stopLoading];
+    }
     _url = url;
     [self.WKView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
 }
@@ -57,8 +64,8 @@
         _configuretion.processPool = [[WKProcessPool alloc] init];//内容处理池
         // 通过js与webview内容交互配置
         _configuretion.userContentController = [[WKUserContentController alloc] init];//内容交互控制器
-        [_configuretion.userContentController addScriptMessageHandler:self name:@"setTitle"];
-        [_configuretion.userContentController addScriptMessageHandler:self name:@"reLogin"];
+        [_configuretion.userContentController addScriptMessageHandler:self name:@"你自己的js"];
+       
     }
     
     return _configuretion;
@@ -180,26 +187,9 @@
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message{
     
     NSLog(@"-----name---%@\n---------Message---%@", message.name, message.body);
-    //    [self hiddenFHL];
+        [self hiddenFHL];
     
-    if ([message.name isEqualToString:@"setTitle"]) {//设置标题
-        self.title = message.body;
-    }
-    else if ([message.name isEqualToString:@"reLogin"]){//登录失效
-        //失效，退出到登录界面
-        __weak typeof(self) weakSelf = self;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            //弹出提示框
-            [weakSelf sessionInvalue];
-        });
-    } else if ([message.name isEqualToString:@"callPhone"]) {//打电话
-        
-        __weak typeof(self) weakSelf = self;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            //弹出提示框
-            [weakSelf callPhone:message.body];
-        });
-    }
+//   你自己的js交互
     
 }
 
@@ -234,31 +224,11 @@
     }
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-            [weakSelf.hud hide:0];
-            weakSelf.hud = nil;
+            [_hud hide:0];
+            _hud = nil;
     });
 }
 
-
-//session失效，退出到登录界面
-- (void)sessionInvalue
-{
-    __weak typeof(self) weakSelf = self;
-    UIAlertController * warning  =[UIAlertController alertControllerWithTitle:@"提示" message:@"身份信息失效，请重新登录" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        [weakSelf toLoginWithSessionInval];
-    }];
-    [warning addAction:cancelAction];
-    [self presentViewController:warning animated:YES completion:nil];
-    
-}- (void)toLoginWithSessionInval{
-    
-    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:token];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    AppDelegate * app = [UIApplication sharedApplication].delegate;
-    app.window.rootViewController = [[LoginViewController alloc] init];
-}
 
 #pragma mark-拨打电话
 - (void)callPhone:(NSString *)number{

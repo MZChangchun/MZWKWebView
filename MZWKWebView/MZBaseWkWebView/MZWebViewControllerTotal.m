@@ -33,6 +33,9 @@
 }
 //加载网页
 - (void)setUrlName:(NSString *)urlName{
+    if (self.WKView.loading) {
+        [self.WKView stopLoading];
+    }
     _urlName = urlName;
     NSURLRequest * request = [MyTool loadUrlName:urlName];
     
@@ -40,6 +43,9 @@
 }
 
 - (void)setUrl:(NSString *)url{
+    if (self.WKView.loading) {
+        [self.WKView stopLoading];
+    }
     _url = url;
     [self.WKView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
 }
@@ -315,8 +321,8 @@
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
 
-            [weakSelf.hud hide:0];
-            weakSelf.hud = nil;
+            [_hud hide:0];
+            _hud = nil;
     });
 }
 
