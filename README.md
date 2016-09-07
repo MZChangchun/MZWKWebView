@@ -1,2 +1,3 @@
 # MZWkWebView
 这是一个基于WKWebview的类，可以直接使用，因为iOS8以上才支持WKWebView,所以需要iOS8以上才能使用
+请自己添加头文件和podfile文件
